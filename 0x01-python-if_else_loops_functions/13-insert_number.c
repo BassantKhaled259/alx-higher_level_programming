@@ -16,10 +16,10 @@ new->n = number;
 new->next = NULL;
 
 if (!node || new->n < node->n)
-(
-new->next = node;
+
+new->next = (node);
 return (*head = new);
-)
+;
 while (node)
 (
 if (!node->next || new->n < node->next->n)
@@ -30,5 +30,4 @@ return (node);
 )
 node = node->next;
 )
-return (NULL);
-
+return NULL;
