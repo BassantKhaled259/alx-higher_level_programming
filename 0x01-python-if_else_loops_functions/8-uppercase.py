@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-def islower(c):
-    if ord(c) >= 97 and ord(c) <= 122:
-        return True
-    else:
-        return False
 def uppercase(str):
-      for c in str:
-        if ord(c) >= 97 and ord(c) <= 122:
-            c = chr(ord(c) - 32)
-        print("{}".format(c), end="")
-    print("")
+    newstr = ''
+    for i in range(len(str)):
+        if ord(str[i]) in range(97, 123):
+            newstr = newstr + chr(ord(str[i]) - 32)
+        else:
+            newstr = newstr + str[i]
+    print("{}".format(newstr))
